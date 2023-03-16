@@ -15,7 +15,12 @@ function divide(number1, number2) {
   return number1 / number2;
 }
 
-
+$(document).ready(function(){
+  $("form").submit(function(event){
+    //to fix the default behaviour of browser
+    event.preventDefault();
+  })
+}) 
 const res = document.getElementById('result')
 
 //to display values on the screen
@@ -25,11 +30,11 @@ function liveScreen(num) {
   }
   result.value += num;
 }
-//delete button
+//for delete button
 function del(){
   result.value = result.value.slice(0, -1)
 }
-//to clear screen 
+//for clear button
 function clean() {
   result.value =" ";
 }
@@ -47,5 +52,7 @@ function calculate(){
     alert("invalid input please enter a valid input")
   }
   
-
 }
+
+
+ 
