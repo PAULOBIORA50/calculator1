@@ -37,3 +37,15 @@ function clean() {
 function calculate(){
   result.value = eval(result.value);
 }
+//error message when wrong operation is entered
+function calculate(){
+  try{
+  result.value = eval(result.value)
+    
+  }
+  catch(err){
+    alert("invalid input please enter a valid input")
+  }
+  
+
+}
