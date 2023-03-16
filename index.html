@@ -14,6 +14,7 @@
 </head>
 
 <body>
+  <h1>CALCULATOR</h1>
   <div class="container">
     <div class="calculator">
       <form>
@@ -47,28 +48,18 @@
           <input type="button" value="/" onclick="liveScreen('/')" />
           <input type="button" value="0" onclick="liveScreen(0)"/>
           <input type="button" value="." onclick="liveScreen('.')"/>
-          <input type="button" value="=" onclick="calculate('')" />
+          <input type="button" value="%" onclick="liveScreen('%')"/>
+
         </div>
 
         <div class="sixth">
-          <input type="button" value="DEL" onclick="result.value=result.value.toString().slice(0, -1 )" id="delete" />
-        <input type="button" value="C" onclick="result.value=''" id="clear-button" />
+          <input type="button" value="=" onclick="calculate('')" />
+          <input type="button" value="DEL" onclick="del()" id="delete" />
+        <input type="button" value="C" onclick="clean()" id="clear-button" />
       </div>
-
-
-
       </form>
     </div>
   </div>
-
-
-
-
-
-
-
-
-
 
 </body>
 
